@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			
+			.mui-table-view-cell{
+				font-size: 16px;
+				background-color: #fff;
+				
+			}
+			.mui-table-view{
+				background-color: rgba(0,0,0,0);
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function(){
+				var pyq = document.getElementById("pyq");
+				pyq.addEventListener("tap",function(){
+					mui.openWindow({
+						url:"disp/header.html",
+						id:"disp/header.html"
+					})
+				});
+			});
+		</script>
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none;">
+		    <h1 class="mui-title">Discover</h1>
+		</header>
+		<div class="mui-content">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-left" id="pyq">
+						<span class="mui-icon mui-icon-pengyouquan" style="color: #007AFF;"></span> &nbsp;&nbsp;&nbsp;&nbsp;朋友圈
+					</li>
+					<br />
+					<li class="mui-table-view-cell mui-left">
+						<span class="mui-icon mui-icon-spinner-cycle mui-spin" style="color: #DD524D;"></span> &nbsp;&nbsp;&nbsp;&nbsp;搜一搜
+					</li>
+				</ul>
+		</div>
+	</body>
+
+</html>

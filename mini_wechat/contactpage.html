@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			*{margin: 0;padding: 0;}		
+			.mui-table-view-cell{
+				height: 60px;								
+				padding: 0;
+			}
+			.conlogo{
+				height: 40px;
+				
+				float: left;
+				margin: 10px 15px 0 15px;
+			}
+			.conname{
+				float: left;
+				color: #000;
+				height: 100%;
+				line-height: 60px;
+				font-size: 17px;
+			}
+			#countnum{
+				/*border: 1px solid black;*/
+				margin-top: 10px;
+				color: #aaa;
+				font-size: 13px;
+				text-align: center;
+				width:100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none;">
+		    <h1 class="mui-title">Contacts</h1>
+		    
+		</header>
+		<div class="mui-content">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<img src="img/head1.jpg" class="conlogo"/>
+						<p class="conname">妹妹</p>					
+					</li>
+					<li class="mui-table-view-cell">
+						<img src="img/head4.jpg" class="conlogo"/>
+						<p class="conname">同事1</p>					
+					</li>
+					<li class="mui-table-view-cell">
+						<img src="img/head3.jpg" class="conlogo"/>
+						<p class="conname">弟弟</p>					
+					</li>
+					<li class="mui-table-view-cell">
+						<img src="img/head5.jpg" class="conlogo"/>
+						<p class="conname">同事2</p>							
+					</li>
+				</ul>
+				
+				<div id="countnum"></div>
+		</div>
+		
+		<script type="text/javascript">
+			function addcount(){
+				var contactsnum = document.getElementsByClassName("mui-table-view-cell").length;
+				var countnum = document.getElementById("countnum");
+			
+				countnum.innerHTML = "----共有" +contactsnum+ "位好友----";
+			}
+			window.onload = addcount;
+		</script>
+		
+	</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/chat.css" />
+	</head>
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none;">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 id="title" class="mui-title" style="text-align: left;">标题</h1>
+		</header>
+		
+		<div class="mui-content" style="margin-bottom: 70px;">
+			
+			<div id="msg_list">
+				<!--别人文字-->
+			    <div class="other_detail">
+			    	<img src="../img/head1.jpg" class="other_logo" id="logo"/>
+			    	<span class="other_dialog_trianlge"></span>
+			    	<div class="other_msg other_text">			    		
+			    		<p>100分 姐姐我考了100分！100分 姐姐我考了100分！100分 姐姐我考了100分！100分 姐姐我考了100分！</p>
+			    	</div>		
+			    	<div class="clear"></div>
+			    </div>
+			    <!--别人图片-->
+			    <div class="other_detail">
+			    	<img src="../img/head1.jpg" class="other_logo" id="logo"/>
+			    	<span class="other_dialog_trianlge"></span>
+			    	
+			    	<div class="other_msg other_img" id="other_msg">
+			    		<img src="../img/head5.jpg" />
+			    	</div>		
+			    	<div class="clear"></div>
+			    </div>
+			    			 			    			    			    
+			    <!--自己文字-->
+			   <div class="self_detail">
+			    	<img src="../img/head2.jpg" class="self_logo"/>
+			    	<span class="self_dialog_trianlge"></span>
+			    	<div class="self_msg self_text">   					    					    		
+			    		<p>真棒！真棒！真棒！真棒！真棒！真棒！真棒！真棒！真棒！真棒！真棒！真棒！真棒！</p>
+			    	</div>
+			    	<div class="clear"></div>
+			    </div>
+			    
+			    <!--自己图片-->
+			    <div class="self_detail">
+			    	<img src="../img/head2.jpg" class="self_logo"/>
+			    	<span class="self_dialog_trianlge"></span>
+			    	<div class="self_msg self_img">   					    					    		
+			    		<img src="../img/head5.jpg" />
+			    	</div>		    	
+			    	<div class="clear"></div>
+			    </div>
+			    
+			    
+			</div>
+		
+		</div>
+		
+		<nav class="mui-bar mui-bar-tab">
+		    <div class="mui-input-row">	 
+		    	<i class="mui-icon mui-icon-plus" id="plusbtn"></i>
+		    	<textarea id="msg_text" type="text" class="input_text"></textarea>
+		    	<button id="sendbtn" class="mui-btn-green">发送</button>	    			    	
+		    	
+		    	<div id="Gallery" class="mui-slider" style="margin-top:15px;display: none;">
+				<div class="mui-slider-group">
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-image" id="send_pic"></span>
+									<div class="mui-media-body">相册</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
+									<div class="mui-media-body">Email</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-chatbubble"></span>
+									<div class="mui-media-body">Chat</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-location"></span>
+									<div class="mui-media-body">location</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-search"></span>
+									<div class="mui-media-body">Search</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-phone"></span>
+									<div class="mui-media-body">Phone</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-gear"></span>
+									<div class="mui-media-body">Setting</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-info"></span>
+									<div class="mui-media-body">about</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-more"></span>
+									<div class="mui-media-body">more</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-home"></span>
+									<div class="mui-media-body">Home</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
+									<div class="mui-media-body">Email</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-chatbubble"></span>
+									<div class="mui-media-body">Chat</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-location"></span>
+									<div class="mui-media-body">location</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-search"></span>
+									<div class="mui-media-body">Search</div>
+								</a>
+							</li>							
+						</ul>
+					</div>					
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+		    	
+		    </div>
+		</nav>
+		
+		
+		<!--<script type="text/javascript" src="../js/mui.min.js" ></script>-->
+		<script type="text/javascript">
+			mui.plusReady(function(){
+				var curview = plus.webview.currentWebview();
+				var name = curview.name;
+				var logo = curview.logo;
+				
+				var newsrc = "../" + logo;
+				document.getElementById("title").innerHTML = name;
+				document.getElementById("logo").src = newsrc;
+				
+				var sendbtn = document.getElementById("sendbtn");
+						
+				sendbtn.addEventListener("tap",function(){
+					var send = document.getElementById("msg_text").value;
+					
+					if(send){
+						
+						var html = "<div class=\"self_detail\">" +
+		    							"<img src=\"../img/head2.jpg\"/>" +
+		    							"<div class=\"self_msg\">" +   				    		
+		    								"<span class=\"self_dialog_trianlge\"></span>" +
+		    								"<p>"+
+		    									send +
+		    								"</p>" +
+		    							"</div>" +
+		    							"<div class=\"clear\"></div>"
+		    						"</div>";
+		    			var msg_list = document.getElementById("msg_list");
+		    			msg_list.innerHTML+=html;
+		    			document.getElementById("msg_text").value = "";
+					}
+				});
+				
+				var plusbtn = document.getElementById("plusbtn");				
+				plusbtn.addEventListener("tap",function(){
+					var nine_select = document.getElementById("Gallery");
+					var display = nine_select.style.display;
+					
+					if(display=="none"){
+						nine_select.style.display = "block";
+						
+					}
+					else{
+						nine_select.style.display = "none";
+					}
+				});
+				
+				var send_pic = document.getElementById("send_pic");
+				send_pic.addEventListener("tap",function(){
+					plus.gallery.pick(
+						function(e){
+							var images=e.files;
+							for(var i in images){
+								var path = images[i];
+								var html = "<div class=\"self_detail\">" +
+			    						"<img src=\"../img/head2.jpg\" class=\"self_logo\"/>" +
+			    						"<span class=\"self_dialog_trianlge\"></span>" +
+			    	                    "<div class=\"self_msg self_img\">" +					    					    		
+			    						"<img src=\"" +path + "\" />" +
+			    						"</div>" +		    	
+			    						"<div class=\"clear\"></div>" +
+			    						"</div>"	
+			    						
+			    				var msg_list = document.getElementById("msg_list");
+		    					msg_list.innerHTML+=html;
+		    					var nine_select = document.getElementById("Gallery");
+		    					nine_select.style.display = "none";
+//		    					document.getElementById("msg_text").value = "";
+							}
+						},
+						function(){},
+						{filter:"image",multiple:true}
+					);
+				});
+				
+			});
+//			(function($) {
+//				$(".mui-scroll-wrapper").scroll({});
+//			})(mui);
+		</script>
+		
+		
+	</body>
+
+</html>

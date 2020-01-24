@@ -1,0 +1,101 @@
+*{
+	margin:0;
+	padding: 0;
+	touch-action: none
+}
+.clear{clear: both;}
+.other_detail,.self_detail{
+	margin: 10px 5px;
+	/*background: #CF2D28;*/
+}
+.other_logo,.self_logo{
+	width: 50px;
+	height:50px;
+}
+.other_logo,.other_dialog_trianlge{
+	float: left;
+}
+.self_logo,.self_dialog_trianlge{
+	float: right;
+}
+.other_detail p,.self_detail p{
+	height: auto;
+	line-height: 25px;
+	color: #000;
+	font-size: 15px;
+}
+.other_dialog_trianlge,.self_dialog_trianlge{
+	margin: 15px 0px;
+}
+.other_dialog_trianlge{
+	border-left:10px solid rgba(255,255,255,0);
+	border-right:10px solid #fff;
+	border-top:10px solid rgba(255,255,255,0);
+	border-bottom:10px solid rgba(255,255,255,0);
+}
+.self_dialog_trianlge{
+	border-left:10px solid #2AC845;
+	border-right:10px solid rgba(255,255,255,0);
+	border-top:10px solid rgba(255,255,255,0);
+	border-bottom:10px solid rgba(255,255,255,0);
+}
+.other_msg,.self_msg{
+	float: left;
+	padding: 10px;
+	
+	background: #fff;
+	border-radius: 10px;
+}
+.self_msg{
+	/*padding: 10px;*/
+	float: right;
+	background: #2AC845;
+}
+.other_msg img,.self_msg img{
+	width: 100%;
+}
+.other_text,.self_text{
+	max-width: 70%;
+}
+.other_img,.self_img{
+	max-width: 45%;
+}
+
+/*.self_detail p{
+	float: right;
+	height: auto;
+	max-width: 70%;
+	padding: 15px;
+	line-height: 25px;
+	
+	color: #fff;
+	font-size: 15px;
+	background-color: #2AC845;
+	border-radius: 5px;
+}*/
+
+
+.mui-input-row{
+	
+	bottom: 0px;
+} 
+
+.mui-icon-plus{
+	float: left;
+	width: 10%;
+	text-align: center;
+}
+
+.mui-input-row textarea{
+	float: left;
+	width: 70%;
+	height: 40px;
+}
+.mui-input-row button{
+	width: 20%;
+	height: 40px;
+	
+	float: right;
+}
+
+

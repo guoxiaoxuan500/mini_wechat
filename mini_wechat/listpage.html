@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function(){
+				mui(".mui-table-view-cell").on("tap","a",function(){
+					
+					var title = this.getAttribute("title");
+					var imge = this.getAttribute("alt");
+					mui.openWindow({
+					    url:"listp/chatpage.html",
+					    id:"listp/chatpage.html",
+					    extras:{
+					      name:title,//自定义扩展参数，可以用来处理页面间传值
+					      logo:imge
+					    },				    
+					    show:{
+					      autoShow:true,//页面loaded事件发生后自动显示，默认为true
+					      aniShow:"slide-in-right",//页面显示动画，默认为”slide-in-right“；
+					      duration:100//页面动画持续时间，Android平台默认100毫秒，iOS平台默认200毫秒；
+					    },
+					    waiting:{
+					      autoShow:true,//自动显示等待框，默认为true
+					      title:'正在加载...'//等待对话框上显示的提示内容
+					    }
+					})
+				});
+				
+			});
+//			(function($) {
+//			$(".mui-scroll-wrapper").scroll({});
+//			})(mui);
+		</script>
+		
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none;">
+		    <h1 class="mui-title">WeChat</h1>
+		</header>
+		
+		<div class="mui-content">
+
+	    <ul class="mui-table-view">
+	        <li class="mui-table-view-cell mui-media" >
+	            <a href="javascript:;" title="妹妹" alt="img/head1.jpg">
+	                <img class="mui-media-object mui-pull-left" src="img/head1.jpg">
+	                <div class="mui-media-body">妹妹
+	                    <p class="mui-ellipsis">姐姐，我今天考了100分！姐姐，我今天考了100分！姐姐，我今天考了100分！姐姐，我今天考了100分！姐姐，我今天考了100分！</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" title="弟弟" alt="img/head3.jpg">
+	                <img class="mui-media-object mui-pull-left" src="img/head3.jpg">
+	                <div class="mui-media-body">弟弟
+	                    <p class="mui-ellipsis">给我买个小汽车!</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" title="同事一号" alt="img/head4.jpg">
+	                <img class="mui-media-object mui-pull-left" src="img/head4.jpg">
+	                <div class="mui-media-body">同事一号
+	                    <p class="mui-ellipsis">收到。</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media" >
+	            <a href="javascript:;" title="妹妹" alt="img/head1.jpg">
+	                <img class="mui-media-object mui-pull-left" src="img/head1.jpg">
+	                <div class="mui-media-body">妹妹
+	                    <p class="mui-ellipsis">姐姐，我今天考了100分！姐姐，我今天考了100分！姐姐，我今天考了100分！姐姐，我今天考了100分！姐姐，我今天考了100分！</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" title="弟弟" alt="img/head3.jpg">
+	                <img class="mui-media-object mui-pull-left" src="img/head3.jpg">
+	                <div class="mui-media-body">弟弟
+	                    <p class="mui-ellipsis">给我买个小汽车!</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" title="同事一号" alt="img/head4.jpg">
+	                <img class="mui-media-object mui-pull-left" src="img/head4.jpg">
+	                <div class="mui-media-body">同事一号
+	                    <p class="mui-ellipsis">收到。</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media" >
+	            <a href="javascript:;" title="妹妹" alt="img/head1.jpg">
+	                <img class="mui-media-object mui-pull-left" src="img/head1.jpg">
+	                <div class="mui-media-body">妹妹
+	                    <p class="mui-ellipsis">姐姐，我今天考了100分！姐姐，我今天考了100分！姐姐，我今天考了100分！姐姐，我今天考了100分！姐姐，我今天考了100分！</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" title="弟弟" alt="img/head3.jpg">
+	                <img class="mui-media-object mui-pull-left" src="img/head3.jpg">
+	                <div class="mui-media-body">弟弟
+	                    <p class="mui-ellipsis">给我买个小汽车!</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" title="同事一号" alt="img/head4.jpg">
+	                <img class="mui-media-object mui-pull-left" src="img/head4.jpg">
+	                <div class="mui-media-body">同事一号
+	                    <p class="mui-ellipsis">收到。</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media" >
+	            <a href="javascript:;" title="妹妹" alt="img/head1.jpg">
+	                <img class="mui-media-object mui-pull-left" src="img/head1.jpg">
+	                <div class="mui-media-body">妹妹
+	                    <p class="mui-ellipsis">姐姐，我今天考了100分！姐姐，我今天考了100分！姐姐，我今天考了100分！姐姐，我今天考了100分！姐姐，我今天考了100分！</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" title="弟弟" alt="img/head3.jpg">
+	                <img class="mui-media-object mui-pull-left" src="img/head3.jpg">
+	                <div class="mui-media-body">弟弟
+	                    <p class="mui-ellipsis">给我买个小汽车!</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" title="同事一号" alt="img/head4.jpg">
+	                <img class="mui-media-object mui-pull-left" src="img/head4.jpg">
+	                <div class="mui-media-body">同事一号
+	                    <p class="mui-ellipsis">收到。</p>
+	                </div>
+	            </a>
+	        </li>
+	    </ul>
+	</div>
+		
+	</body>
+
+</html>

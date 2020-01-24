@@ -1,0 +1,23 @@
+{
+  "index.html": {
+    "resources": [
+      "listpage.html"
+    ],
+    "refer": [
+      "contactpage.html",
+      "listpage.html",
+      "mepage.html",
+      "discoverpage.html"
+    ]
+  },
+  "listpage.html": {
+    "refer": [
+      "listp/chatpage.html"
+    ]
+  },
+  "discoverpage.html": {
+    "refer": [
+      "disp/header.html"
+    ]
+  }
+}
