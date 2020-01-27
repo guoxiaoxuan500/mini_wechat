@@ -1,5 +1,5 @@
 # mini_wechat
-<h1>精简版微信 使用MUI+Hbuilder跨平台开发</h1>
+<h1>精简版微信应用 使用mui+hbuilder跨平台开发</h1>
 
 <div style="float:left">
   <h3>四个子页面</h3>
